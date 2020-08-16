@@ -7,7 +7,7 @@
         <title>YAM SOON</title>
         <link rel="icon" type="image/png" href="https://i.ibb.co/WxtSQTB/favicon.png"/>
         <style>
-          div:hover {
+          .yellow:hover {
             animation: shake 0.5s;
             animation-iteration-count: infinite;
           }
@@ -25,6 +25,17 @@
             90% { transform: translate(1px, 2px) rotate(0deg); }
             100% { transform: translate(1px, -2px) rotate(-1deg); }
           }
+          .spider {position: fixed; top: 0mm; left: 50px}
+          .spider:hover {
+            animation: sway 1s ease-in-out infinite alternate;
+            transform-origin: 50% 0; 
+          }
+
+          @keyframes sway {
+            0% { transform: rotate(1deg)}
+            100% {transform: rotate(-1deg)}
+          }
+
           </style>
   </head>  
  
@@ -33,9 +44,13 @@
      <img src="https://i.ibb.co/thnvdQb/name.png" alt=name width="300">
      </a>
      </p>
- 
+     <div class="spider">
+       <a href="http://greeneggsandyams/gummy">
+        <img src="https://i.ibb.co/VDYkwVc/spider.png" alt="spider" width="32" height="185">
+      </a>
+     </div>
     <body style="text-align:center;vertical-align:middle;margin:400px 0px;background-color: antiquewhite;">
-    <div>   
+    <div class="yellow">   
     <a href="#">
          <img src="https://i.ibb.co/prPHTP8/yellow.png" alt="yellow" width="150" height="150">
     </a>
